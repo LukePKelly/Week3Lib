@@ -33,20 +33,9 @@ namespace Week3Lib
             myBook2.Author = "Microsoft";
             myBook2.ISBN = "54321";
 
-            // Output first book information to the console
-            Console.WriteLine($"Book title: {book.Title}");
-            Console.WriteLine($"Book Author: {book.Author}");
-            Console.WriteLine($"Book ISBN: {book.ISBN}");
-            Console.WriteLine();
-
-            // Output second book information to the console
-            Console.WriteLine($"Book title: {book2.Title}");
-            Console.WriteLine($"Book Author: {book2.Author}");
-            Console.WriteLine($"Book ISBN: {book2.ISBN}");
-
-            // Output book information to the console
-            book.DisplayInfo();
-            book1.DisplayInfo();
+            //Output book information to the console
+            myBook.DisplayInfo();
+            myBook2.DisplayInfo();
         }
     }
     }
