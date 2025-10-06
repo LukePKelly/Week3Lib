@@ -3,11 +3,18 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace Week3Lib
 {
-    internal Class Book ()
+    internal class Book ()
 	{
 		string Title;
 		string Author;
 		string ISBN;
+
+         public Book(string bookTitle, string bookAuthor, string bookISBN)
+        {
+              Title = bookTitle;
+              Author = bookAuthor;
+              ISBN = bookISBN;
+        }
 
         void DisplayInfo()
         {
@@ -18,21 +25,14 @@ namespace Week3Lib
         }
 
 
-            static void Main(string[] args)
+         static void Main(string[] args)
 		{
             //Creates a new instance of the Book class, object name differs from the class name
-            Book myBook = new Book();
-			//This is the info about one book in this library
-			myBook.Title = "C# For beginners";
-			myBook.Author = "Bill Gates";
-			myBook.ISBN = "12345";
-
+            Book myBook = new Book("C# For beginners", "Bill Gates", "12345");
+			
             //Adding another Book
-            Book myBook2 = new Book();
-            myBook2.Title = "C# Methods and Classes";
-            myBook2.Author = "Microsoft";
-            myBook2.ISBN = "54321";
-
+            Book myBook2 = new Book("C# Methods and Classes" "Microsoft", "54321");
+ 
             //Output book information to the console
             myBook.DisplayInfo();
             myBook2.DisplayInfo();
